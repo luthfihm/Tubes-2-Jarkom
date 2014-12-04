@@ -41,18 +41,22 @@ void Server::readmessage(int sockid)
 {
     int len;
     message fromclient;
-    while(connected)
-    {
+    char buffer[150];
+    /*while(connected)
+    {*/
         len = read(sockid,fromclient,sizeof(message));
+        
         if(len >= 0)
         {
-            writemessage(fromclient);
+            cout << fromclient.d_user << endl;
+            write(sockid,fromclient,sizeof(message)); // tulis ke klien
+            //writemessage(fromclient);
         }
-        else
+        /*else
         {
             connected = false;
         }
-    }
+    }*/
     close(sockid);
     
 }
@@ -69,7 +73,8 @@ void Server::connect()
         // terima koneksi dari klien
         clilen = sizeof(cli_addr);
         client_sock = accept(sock, (struct sockaddr *) &cli_addr, &clilen);
-        threadvector.push_back(thread(readmessage,client_sock));
+        //threadvector.push_back(thread(readmessage,client_sock));
+        readmessage(client_sock);
     }
 }
 

@@ -40,7 +40,7 @@ class Server
         map<char *,user> usermap;
         map<char *,group> groupmap;
         vector<thread> threadvector;
-        int connected;
+        bool connected;
     public:
         Server();
         ~Server();
