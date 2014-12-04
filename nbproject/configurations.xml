@@ -19,6 +19,8 @@
                    projectFiles="true">
       <itemPath>client.cpp</itemPath>
       <itemPath>clientdriver.cpp</itemPath>
+      <itemPath>mainclient.cpp</itemPath>
+      <itemPath>mainserver.cpp</itemPath>
       <itemPath>server.cpp</itemPath>
       <itemPath>serverdriver.cpp</itemPath>
     </logicalFolder>
@@ -58,6 +60,10 @@
       </item>
       <item path="group.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="mainclient.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="mainserver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="message.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="server.cpp" ex="false" tool="1" flavor2="0">
@@ -96,6 +102,10 @@
       <item path="clientdriver.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="group.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="mainclient.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="mainserver.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="message.h" ex="false" tool="3" flavor2="0">
       </item>

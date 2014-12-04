@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Messenger
+PROJECTNAME=Tubes-2-Jarkom
 
 # Active Configuration
 DEFAULTCONF=Debug
